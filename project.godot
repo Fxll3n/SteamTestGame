@@ -11,16 +11,19 @@ config_version=5
 [application]
 
 config/name="SteamTestGame"
+run/main_scene="uid://c3tm7lipietc4"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 LimboConsole="*res://addons/limbo_console/limbo_console.gd"
+Chat="*res://scripts/autoloads/Chat.gd"
+Network="*res://scripts/autoloads/Network.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/limbo_console/plugin.cfg")
+enabled=PackedStringArray("res://addons/kanban_tasks/plugin.cfg", "res://addons/limbo_console/plugin.cfg")
 
 [input]
 
